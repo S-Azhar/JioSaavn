@@ -43,10 +43,6 @@ nav {
   padding-top: auto;
 }
 
-.combined-container {
-  /* Styles for combined container */
-}
-
 .select-container {
   display: flex;
   align-items: center;
@@ -57,7 +53,6 @@ nav {
 
 .select-box {
   /* Styles for select box */
-
   padding-right: 24px;
   /* Space for arrow icon */
   border: none;
@@ -70,7 +65,6 @@ nav {
   background-color: transparent;
   /* Adjust arrow icon position */
 }
-
 
 .sub-nav {
   /* Styles for sub navigation */
@@ -95,9 +89,7 @@ nav {
   height: 2px;
   background-color: #145C54;
   /* Change this to desired color */
-
   bottom: 12px;
-
   left: 0;
   transform: scaleX(0);
   transition: transform 0.3s ease;
@@ -153,11 +145,6 @@ nav {
   font-size: 1rem;
 }
 
-/*.songItem {
-  height: 190px;
-  display: inline-block;
-  width: 150px; */
-
 .songName {
   font-size: 1.2rem;
   text-align: center;
@@ -169,7 +156,7 @@ nav {
 }
 
 .Artist-Recm h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 22px;
 }
 
@@ -270,24 +257,6 @@ nav {
   }
 }
 
-.songList {
-  /* Styles for song list */
-}
-
-/* New Release Section */
-.NewRelease {
-  /* Styles for new release section */
-}
-
-/* Artist Recommendation Section */
-.Artist-Recm {
-  /* Styles for artist recommendation */
-}
-
-.ArtistList {
-  /* Styles for artist list */
-}
-
 /* Footer */
 footer {
   /* Styles for footer */
@@ -304,15 +273,6 @@ footer {
   padding-top: 5px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-.bottom {
-  /* Styles for bottom section */
-}
-
-.icons {
-  /* Styles for icons */
 }
 
 .bottom-nav {
