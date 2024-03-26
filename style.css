@@ -1,0 +1,388 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+/* Add general styles for your website elements here */
+body {
+  background-color: #F9FAFF;
+}
+
+/* Navigation */
+nav {
+  /* Add styles for navigation bar */
+  background-color: #F9FAFF;
+  padding: 16.5px 22px;
+  height: 125px;
+  margin-bottom: 11px;
+}
+
+.nav-top {
+  /* Styles for top navigation container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  /* Styles for logo container */
+  display: flex;
+  justify-content: flex-end;
+  /* Align logo to the right */
+  align-items: center;
+}
+
+.logo img {
+  height: 35px;
+}
+
+.nav-name {
+  padding-top: auto;
+}
+
+.combined-container {
+  /* Styles for combined container */
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  padding-right: 22px;
+  padding-top: 10px;
+  justify-content: flex-end;
+}
+
+.select-box {
+  /* Styles for select box */
+
+  padding-right: 24px;
+  /* Space for arrow icon */
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 15l6-6H6l6 6z" fill="currentColor"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-color: transparent;
+  /* Adjust arrow icon position */
+}
+
+
+.sub-nav {
+  /* Styles for sub navigation */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.music-nav {
+  padding: 11px;
+  font-size: 2rem;
+  font-weight: 425;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.music-nav::after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background-color: #145C54;
+  /* Change this to desired color */
+
+  bottom: 12px;
+
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.music-nav:hover::after {
+  transform: scaleX(1);
+}
+
+/* Increase font size on hover */
+.music-nav:hover {
+  font-size: 2.25rem;
+  /* Adjust the font size on hover */
+}
+
+/* Trending Now Section */
+.training-list h2 {
+  font-size: 1.75rem;
+  margin-bottom: 22px;
+}
+
+.container {
+  /*  min-height: 72vh; */
+  font-family: 'Varela Round', sans-serif;
+  padding: 0 22px;
+  height: 316px;
+  width: 100%;
+  margin-bottom: 522px;
+}
+
+.songItem {
+  border: border-box;
+  padding-right: 20px;
+}
+
+.songItem img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10%;
+}
+
+.songItemContainer {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  overflow-y: hidden;
+  text-align: center;
+
+}
+
+.songInfo {
+  text-align: center;
+  font-size: 1rem;
+}
+
+/*.songItem {
+  height: 190px;
+  display: inline-block;
+  width: 150px; */
+
+.songName {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.NewRelease h2 {
+  font-size: 1.5rem;
+  margin-bottom: 22px;
+}
+
+.Artist-Recm h2 {
+  font-size: 1.5rem;
+  margin-bottom: 22px;
+}
+
+.ArtistList {
+  padding-right: 10px;
+}
+
+.ArtistContainer {
+  display: flex;
+  overflow: auto;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+.ArtistItem {
+  padding-right: 15px;
+}
+
+.ArtistItem img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.brand img {
+  width: 44px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.bottom {
+
+  position: relative;
+  bottom: 0;
+  height: 75px;
+  background-color: #F6F6F6;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bottom i {
+  font-size: 2rem;
+  color: #373844;
+  margin: auto 24px;
+}
+
+.bottom i:hover {
+  color: #29B4A4;
+  /* Change color on hover */
+}
+
+.icons i {
+  cursor: pointer;
+}
+
+#myProgressBar {
+  background: #00FFAF;
+  width: 80vw;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+
+}
+
+.songTitle {
+  margin: 5px auto;
+  color: black;
+  font-size: 1.2rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.songTitle span {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+  /* Adjust animation duration as needed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.songList {
+  /* Styles for song list */
+}
+
+/* New Release Section */
+.NewRelease {
+  /* Styles for new release section */
+}
+
+/* Artist Recommendation Section */
+.Artist-Recm {
+  /* Styles for artist recommendation */
+}
+
+.ArtistList {
+  /* Styles for artist list */
+}
+
+/* Footer */
+footer {
+  /* Styles for footer */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 141px;
+  background-color: #fff;
+  /* Change color as needed */
+  border-top: 1px solid #ccc;
+  /* Add border for separation */
+  padding-bottom: 10px;
+  padding-top: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.bottom {
+  /* Styles for bottom section */
+}
+
+.icons {
+  /* Styles for icons */
+}
+
+.bottom-nav {
+  /* Styles for bottom navigation */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 66px;
+}
+
+.bottom-nav i {
+  font-size: 1.5rem;
+  color: #999;
+  /* Default color for icons */
+  cursor: pointer;
+}
+
+.bottom-nav i:hover {
+  color: #29B4A4;
+  /* Change color on hover */
+}
+
+.songCover img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* Adjust styles for larger screens here */
+  .nav-logo img {
+    height: 50px;
+    align-items: center;
+    
+  }
+
+  .select-box {
+    font-size: 1.75rem;
+    padding-right: 24px;
+    /* Space for arrow icon */
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path d="M12 15l6-6H6l6 6z" fill="currentColor"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0px center;
+    background-color: transparent;
+    /* Adjust arrow icon position */
+  }
+
+  #myProgressBar {
+    height: 1rem;
+  }
+
+  .songTitle {
+    font-size: 1.5rem;
+  }
+
+  .bottom i {
+    font-size: 2rem;
+    margin: auto 5rem;
+  }
+
+  .bottom-nav i {
+    font-size: 2rem;
+  }
+}

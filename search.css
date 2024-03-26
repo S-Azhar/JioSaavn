@@ -1,0 +1,257 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #F9FAFF
+}
+
+nav {
+  padding: 16px 22px;
+  margin-bottom: 11px;
+  width: 100%;
+}
+
+.container {
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+.nav-logo img {
+  height: 35px;
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  width: calc(100% - 140px);
+  /* Adjust width as needed */
+  padding: 12px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+}
+
+/*
+  /
+}
+
+#searchInput{
+ width: 800px;
+}
+
+
+
+.bottom{
+
+    position: relative;
+    bottom: 0;
+    height: 75px;
+    background-color: #F6F6F6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.bottom i{
+  font-size: 30px;
+  color: #373844;
+  margin: auto 16px;
+}
+
+.icons{
+    margin: 0px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+background : #00FFAF;
+    width: 80vw; 
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+}
+
+.songTitle {
+  margin: 5px auto;
+  color: black;
+  font-size: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.songTitle span {
+    display: inline-block;
+    animation: marquee 15s linear infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 141px;
+  background-color: #fff;
+  /* Change color as needed */
+  border-top: 1px solid #ccc;
+  /* Add border for separation */
+  padding-bottom: 10px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 66px;
+}
+
+.bottom-nav i {
+  font-size: 24px;
+  color: #999;
+  /* Default color for icons */
+  cursor: pointer;
+}
+
+.bottom-nav i:hover {
+  color: #29B4A4;
+  /* Change color on hover */
+}
+
+
+
+/*
+*{
+  margin: 0px;
+  padding: 0px;
+  bottom: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  padding: 16px 22px;
+  margin-bottom: 11px;
+  width: 87%;
+}
+
+.nav-logo {
+  justify-content: center;
+}
+
+.nav-logo img {
+  height: 35px;
+  width: 120px;
+}
+
+
+
+.container {
+ 
+ margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  border-radius: 25px;
+} */
+
+@media only screen and (max-width: 768px) {
+
+  /* Adjust styles for smaller screens here */
+  #searchInput {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* Adjust styles for larger screens here */
+  .nav-logo img {
+    height: 50px;
+  }
+
+  #myProgressBar {
+    height: 1rem;
+  }
+
+  .songTitle {
+    font-size: 1.5rem;
+  }
+
+  .bottom i {
+    font-size: 2rem;
+    margin: auto 5rem;
+  }
+
+  .bottom-nav i {
+    font-size: 2rem;
+  }
+
+}

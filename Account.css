@@ -1,0 +1,130 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F9FAFF;
+}
+
+nav {
+  /* Add styles for navigation bar */
+  background-color: #F9FAFF;
+  padding: 16.5px 22px;
+  height: 40px;
+  margin-bottom: 11px;
+}
+
+.nav-logo {
+  /* Styles for logo container */
+  display: flex;
+  justify-content: flex-start;
+  /* Align logo to the right */
+  align-items: center;
+}
+
+.logo img {
+  height: 35px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 90%;
+  margin: x;
+  padding: 20px;
+
+  border-radius: 5px;
+}
+
+
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+}
+
+
+input[type="submit"] {
+  font-weight: bolder;
+  font-size: 1rem;
+  width: calc(100% - 1px);
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #29B4A4;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: center;
+}
+
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* Adjust styles for larger screens here */
+  .nav-logo img {
+    height: 50px;
+    align-items: center;
+
+  }
+
+
+  .bottom-nav i {
+    font-size: 2rem;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+    ;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+
+}
