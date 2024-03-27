@@ -17,7 +17,7 @@ let songs = [
   { songName: "Heeriye (feat Arijit Singh)", filePath: "songs/5.mp3", coverPath: "covers/5.jpeg" },
     { songName: "Kabhi Kabhi Aditi", filePath: "songs/6.mp3", coverPath: "covers/6.jpeg" },
   { songName: "Street Celebrity", filePath: "songs/7.mp3", coverPath: "covers/7.jpeg" },
-  { songName: "Arabic Kuthu - Halamithi Habibo", filePath: "songs/8.mp3", coverPath: "covers/8.jpeg" },
+  { songName: "Arabic Kuthu", filePath: "songs/8.mp3", coverPath: "covers/8.jpeg" },
   { songName: "Ik Tera", filePath: "songs/9.mp3", coverPath: "covers/9.jpeg" },
   { songName: "Gone Girl", filePath: "songs/6.mp3", coverPath: "covers/10.jpeg" },
 
@@ -31,15 +31,12 @@ let songs = [
   { songName: "Pehle Bhi Main", filePath: "songs/2.mp3", coverPath: "covers/2.jpeg" },
   { songName: "Sher Khul Gaye", filePath: "songs/9.mp3", coverPath: "covers/11.jpeg" },
   { songName: "Tu hai kahan", filePath: "songs/1.mp3", coverPath: "covers/1.jpeg" },
-  { songName: "Heeriye (feat Arijit Singh)", filePath: "songs/8.mp3", coverPath: "covers/5.jpeg" },
-  { songName: "Arabic Kuthu - Halamithi Habibo", filePath: "songs/8.mp3", coverPath: "covers/8.jpeg" },
+  { songName: "Pal", filePath: "songs/8.mp3", coverPath: "covers/15.jpeg" },
+  { songName: "Nira Ishq", filePath: "songs/8.mp3", coverPath: "covers/13.jpeg" },
   { songName: "Badass (From Leo)", filePath: "songs/4.mp3", coverPath: "covers/12.jpeg" },
-  { songName: "Blue Eyes", filePath: "songs/5.mp3", coverPath: "covers/4.jpeg" },
-  { songName: "Gone Girl", filePath: "songs/6.mp3", coverPath: "covers/10.jpeg" },
-  { songName: "Heartless (feat Aastha Gill)", filePath: "songs/3.mp3", coverPath: "covers/3.jpeg" },
-  { songName: "Heeriye (feat Arijit Singh)", filePath: "songs/8.mp3", coverPath: "covers/8.jpeg" },
-  { songName: "Ik Tera", filePath: "songs/9.mp3", coverPath: "covers/9.jpeg" },
-  { songName: "Kabhi Kabhi Aditi", filePath: "songs/10.mp3", coverPath: "covers/10.jpeg" },
+  { songName: "Sakhiyaan", filePath: "songs/5.mp3", coverPath: "covers/17.jpeg" },
+  { songName: "Tu Aake Dekhle", filePath: "songs/10.mp3", coverPath: "covers/14.jpeg" },
+  { songName: "Same Beef", filePath: "songs/3.mp3", coverPath: "covers/16.jpeg" },
 ]
 
 songItems.forEach((element, i) => {
