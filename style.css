@@ -137,8 +137,12 @@ nav {
   overflow: auto;
   overflow-y: hidden;
   text-align: center;
-
 }
+
+/* Hide scrollbar indicator */
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
 .songInfo {
   text-align: center;
