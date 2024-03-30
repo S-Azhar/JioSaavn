@@ -1,4 +1,4 @@
-console.log("Welcome to Spotify");
+console.log("Welcome to JioSaavn");
 
 // Initialize the Variables
 let songIndex = 0;
@@ -12,9 +12,9 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songs = [
   { songName: "Tu hai kahan", filePath: "songs/1.mp3", coverPath: "covers/1.jpeg" },
   { songName: "Pehle Bhi Main", filePath: "songs/2.mp3", coverPath: "covers/2.jpeg" },
-  { songName: "Heartless (feat Aastha Gill)", filePath: "songs/3.mp3", coverPath: "covers/3.jpeg" },
+  { songName: "Heartless", filePath: "songs/3.mp3", coverPath: "covers/3.jpeg" },
   { songName: "Blue Eyes", filePath: "songs/4.mp3", coverPath: "covers/4.jpeg" },
-  { songName: "Heeriye (feat Arijit Singh)", filePath: "songs/5.mp3", coverPath: "covers/5.jpeg" },
+  { songName: "Heeriye", filePath: "songs/5.mp3", coverPath: "covers/5.jpeg" },
     { songName: "Kabhi Kabhi Aditi", filePath: "songs/6.mp3", coverPath: "covers/6.jpeg" },
   { songName: "Street Celebrity", filePath: "songs/7.mp3", coverPath: "covers/7.jpeg" },
   { songName: "Arabic Kuthu", filePath: "songs/8.mp3", coverPath: "covers/8.jpeg" },
@@ -124,3 +124,55 @@ document.getElementById('previous').addEventListener('click', () => {
   masterPlay.classList.remove('fa-play-circle');
   masterPlay.classList.add('fa-pause-circle');
 })
+
+audioElement.addEventListener('ended', () => {
+  // Automatically play the next song
+  if (songIndex < songs.length - 1) {
+    songIndex++;
+    audioElement.src = songs[songIndex].filePath;
+    masterSongName.innerText = songs[songIndex].songName;
+    audioElement.play();
+    gif.style.opacity = 1;
+    masterPlay.classList.remove('fa-play-circle');
+    masterPlay.classList.add('fa-pause-circle');
+  } else {
+    // If it's the last song, stop playback or do whatever you want
+    audioElement.pause();
+    masterPlay.classList.remove('fa-pause-circle');
+    masterPlay.classList.add('fa-play-circle');
+  }
+});
+
+// Function to play a specific song
+const playSong = (index) => {
+  // Update songIndex
+  songIndex = index;
+  
+  // Set the audio source to the selected song
+  audioElement.src = songs[songIndex].filePath;
+  
+  // Update the song name display
+  masterSongName.innerText = songs[songIndex].songName;
+  
+  // Reset the audio playback time
+  audioElement.currentTime = 0;
+  
+  // Play the selected song
+  audioElement.play();
+  
+  // Update play/pause icon
+  masterPlay.classList.remove('fa-play-circle');
+  masterPlay.classList.add('fa-pause-circle');
+  
+  // Show GIF animation
+  gif.style.opacity = 1;
+};
+
+// Add click event listener to each song item image
+songItems.forEach((element, i) => {
+  let img = element.querySelector("img");
+  img.src = songs[i].coverPath;
+  img.addEventListener('click', () => {
+    playSong(i);
+  });
+});
